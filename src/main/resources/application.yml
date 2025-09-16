@@ -9,3 +9,9 @@ spring:
           uri: http://localhost:9001
           predicates:
             - Path=/patient/**
+
+  security:
+    user:
+      name: admin
+      password: "{noop}admin"
+      roles: ADMIN
